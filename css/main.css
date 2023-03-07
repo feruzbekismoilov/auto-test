@@ -8,6 +8,7 @@ html{
 *,
 *::before,
 *::after {
+    margin: 0;
     box-sizing: inherit;
 }
 
@@ -55,18 +56,23 @@ ul{
     padding-left: 0;
     list-style: none;
 }
+p{
+    margin: 0;
+}
 
 a{
     text-decoration: none;
 }
 .site-main{
+    height: 100vh;
     padding-top: 100px;
-    padding-bottom: 160px;
     background-image: url(../images/back-to-future.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .main__wrapper{
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 .main__wrapper__title{
@@ -76,6 +82,7 @@ a{
     font-size: 50px;
 }
 .main__wrapper__subtitle{
+    margin-bottom: 30px;
     color: #fff;
     font-weight: 500;
     font-size: 30px;
@@ -84,6 +91,7 @@ a{
     display: flex;
     flex-direction:column;
     gap: 30px;
+    margin: 0 auto;
 }
 .main__wrapper__link{
     display: inline-block;
@@ -110,22 +118,19 @@ a{
 
 /* ************************************************* */
 
-.easy-main{
-    padding-top: 100px;   
+.main{
+    padding-top: 80px;   
     background-image: url(../images/back-to-future.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
 }
-.easy-main__wrapper{
+.main__inner{
     display: flex;
     justify-content: space-between;
 }
-.easy-main__wrapper__start{
-    width: 25%;
-}
-.easy-main__wrapper__start__title{
-    margin-bottom: 70px;
+.main__inner__start__title{
+    margin-bottom: 100px;
     font-weight: 600;
     font-size: 40px;
     color: #fff;
@@ -143,11 +148,64 @@ a{
     border: 1px solid #fff;
     border-radius: 10px;
 }
-.back:hover{
-    text-decoration:underline;
-    color:blue;
-    backdrop-filter: blur(10px);
+.main__inner__middle{
+    text-align: center;
 }
-.easy-main__wrapper__list{
-    width: 50%;
+.image{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.question-num{
+    display: block;
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 20px;
+}
+.question{
+    margin-bottom: 25px;
+    color:#fff;
+    font-size: 30px;
+}
+.main__inner__list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.main__inner__list__item{
+    width: 450px;
+    padding: 10px 0;
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    /* backdrop-filter: sepia(10px); */
+}
+.residual-effort{
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 25px
+}
+.remaining-time{
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 25px
+}
+.completed-questions{
+    margin-bottom: 35px;
+    color: #fff;
+    font-size: 25px
+}
+.true-answers{
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 25px
+}
+.false-answer{
+    color: #fff;
+    font-size: 25px
 }
