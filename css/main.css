@@ -174,16 +174,19 @@ a{
     flex-direction: column;
     gap: 20px;
 }
-.main__inner__list__item{
+
+.main__inner__list__item_btn{
     width: 450px;
     padding: 10px 0;
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     border: 1px solid #fff;
     border-radius: 5px;
-    background-color: #fff;
-    /* backdrop-filter: sepia(10px); */
+}
+.main__inner__list__item_btn:active{
+    transform:scale(0.9);
+    border-color: red;;
 }
 .residual-effort{
     margin-bottom: 30px;
@@ -208,4 +211,7 @@ a{
 .false-answer{
     color: #fff;
     font-size: 25px
+}
+.countdown{
+    color: #fff;
 }
