@@ -54,7 +54,7 @@ error_answer3.src = './mp3/axmoq.ogg';
 
 let startingMinutesEasy = 8;
 let startingMinutesMedium = 5;
-let startingMinutesHard = 1;
+let startingMinutesHard = 3;
 
 let timeEasy = startingMinutesEasy * 60;
 let timeMedium = startingMinutesMedium * 60;
