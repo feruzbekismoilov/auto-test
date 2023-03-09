@@ -24,36 +24,42 @@
                 <p class="question">Bu qanday belgi?</p>
                 <ul class="main__inner__list">
                     <li class="main__inner__list__item" >
-                        <button class="main__inner__list__item_btn">asvdd</button>
+                        <button class="main__inner__list__item_btn correct-answer" onmousedown="correct_answer.play()">asvdd</button>
                      </li>
                      <li class="main__inner__list__item" >
-                         <button class="main__inner__list__item_btn">asvdd</button>
+                         <button class="main__inner__list__item_btn error-answer1" onmousedown="error_answer1.play()">asvdd</button>
                      </li>
                      <li class="main__inner__list__item" >
-                         <button class="main__inner__list__item_btn ">asvdd</button>
+                         <button class="main__inner__list__item_btn error-answer2 " onmousedown="error_answer2.play()">asvdd</button>
                      </li>
                      <li class="main__inner__list__item" >
-                         <button class="main__inner__list__item_btn">asvdd</button>
+                         <button class="main__inner__list__item_btn error-answer3" onmousedown="error_answer3.play()">asvdd</button>
                      </li>
                 </ul>
                </div>
                 <div class="main__inner__end">
                     <p class="residual-effort">
-                        Qolgan urinishlar:
+                        Qolgan urinishlar:10
                     </p>
-                    <p class="remaining-time">
-                        Qolgan vaqt:
+                    <p class="remaining-time hard">
+                        Qolgan vaqt: 3:00
                     </p>
                     <p class="completed-questions">
-                        Bajarilgan savollar:
+                        Bajarilgan savollar:0/10
                     </p>
                     <p class="true-answers">
-                        To'g'ri javoblar:
+                        To'g'ri javoblar:0
                     </p>
-                    <p class="false-answer">
-                        Noto'g'ri javoblar:
+                    <p class="false-answers">
+                        Noto'g'ri javoblar:0
                     </p>
                 </div>
+            </div>
+            <div class="result__main">
+                <h3 class="result__main__title">You win!</h3>
+                <img class="result__main-img" src="./images/checkmark.gif" alt="" >
+                <p class="result__main__true-answer">To'g'ri javoblar :0 ta</p>
+                <a  class="try-again" href="./hard.html">Try again</a>
             </div>
         </div>
     </main>

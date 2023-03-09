@@ -19,7 +19,7 @@ body{
     margin: 0;
     font-family: "Arial", sans-serif;
     font-weight: 400;
-    background-color: #fff;
+    background-color:#000;
 }
 
 img{
@@ -126,6 +126,7 @@ a{
     height: 100vh;
 }
 .main__inner{
+    
     display: flex;
     justify-content: space-between;
 }
@@ -186,7 +187,10 @@ a{
 }
 .main__inner__list__item_btn:active{
     transform:scale(0.9);
-    border-color: red;;
+    border: 3px solid red;
+}
+.main__inner__list__item_btn:nth-child(1):active{
+    border-color: green;
 }
 .residual-effort{
     margin-bottom: 30px;
@@ -208,10 +212,48 @@ a{
     color: #fff;
     font-size: 25px
 }
-.false-answer{
+.false-answers{
     color: #fff;
     font-size: 25px
 }
 .countdown{
     color: #fff;
+}
+
+/**********************  RESULT MAIN ***************************/
+.result__main{
+    display: none;
+    text-align: center;
+    color: #fff;
+}
+.result__main__title{
+    margin-bottom: 100px;
+    font-size: 80px;
+}
+.result__main-img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+}
+.result__main__true-answer{
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+.try-again{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: green;
+    color: #fff;
+    font-size: 20px;
+}
+
+.hidden{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+    src: url(../images/error.png);
 }
